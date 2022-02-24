@@ -1,0 +1,2 @@
+# About This Repo
+This repository is intended to contain practice projects for my personal use. Feel free to browse, but understand that none of this code should be considered production-or-portfolio-ready.
