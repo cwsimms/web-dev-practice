@@ -1,23 +1,34 @@
 ﻿body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    background-color: coral;
+    background-image: linear-gradient(225deg, orangered, coral, magenta);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
     font-family: sans-serif;
     background-color: red;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-image: linear-gradient(coral, red);
+    box-shadow: black 5px 5px 10px;
+    position: relative;
+    z-index: 10;
+    padding: 0px 0px 10px 0px;
 }
 
 #title {
-
+    margin-bottom: 5px;
 }
 
 #description {
-
+    margin-top: 5px;
 }
 
 #form-div {
@@ -29,6 +40,7 @@ header {
     font-family: sans-serif;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 45px;
 }
 
 label {
@@ -36,7 +48,14 @@ label {
 }
 
 form {
-
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.6), rgba(114, 114, 114, 0.6));
+    border: medium;
+    color: white;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 10px;
+    box-shadow: inset -2px 0 rgba(255, 255, 255, 0.6), inset 0 2px rgba(255, 255, 255, 0.6), inset 2px 0 rgba(255, 255, 255, 0.6), inset 0 -2px rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6) 6px 6px 10px;
 }
 
 input{
@@ -56,7 +75,7 @@ input{
 }
 
 #number {
-    width: 28ch;
+    width: 30ch;
 }
 
 #dropdown-label{
