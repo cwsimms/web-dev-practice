@@ -1,9 +1,15 @@
 ﻿body {
-
+    margin: 0;
+    padding: 0;
 }
 
 header {
-
+    font-family: sans-serif;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 #title {
@@ -15,10 +21,17 @@ header {
 }
 
 #form-div {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 form {
+
+}
+
+input{
 
 }
 
@@ -32,6 +45,10 @@ form {
 
 #number-label {
 
+}
+
+#number {
+    width: 28ch;
 }
 
 #dropdown-label{
