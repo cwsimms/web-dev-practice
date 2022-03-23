@@ -3,7 +3,11 @@
 }
 
 header {
-
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header-img {
@@ -12,6 +16,17 @@ header {
 
 #nav-bar {
 
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #main {
@@ -46,6 +61,7 @@ label {
 
 }
 
-#css-section {
+@media (max-width: 768px)
+{
 
 }
