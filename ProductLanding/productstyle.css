@@ -61,6 +61,39 @@ label {
 
 }
 
+#purchase-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: lightgray;
+    justify-content: center;
+    margin: auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.product-img {
+    margin: auto;
+}
+
+.product-button {
+    text-align: center;
+}
+
 @media (max-width: 768px)
 {
 
