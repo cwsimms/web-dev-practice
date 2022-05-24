@@ -40,7 +40,14 @@ li {
     font-family: Helvetica;
     text-decoration: none;
     font-size: x-large;
+}
+
+.nav-link:hover {
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+.nav-link:active {
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5) inset;
 }
 
 #main {
@@ -82,12 +89,17 @@ label {
 #email {
     border-radius: 15px;
     border: none;
-    padding: 5px;
+    padding: 4px 0px 4px 0px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5) inset;
 
+}
+
+#email:focus {
+    border: none;
+    outline: none;
 }
 
 #submit {
@@ -97,7 +109,14 @@ label {
     font-size: 14px;
     font-weight: 600;
     padding: 5px 10px 5px 10px;
+}
+
+#submit:hover {
     box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+}
+
+#submit:active {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5) inset;
 }
 
 #purchase-section {
