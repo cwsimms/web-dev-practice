@@ -44,7 +44,9 @@ li {
 }
 
 #main {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #video-section {
@@ -56,23 +58,46 @@ iframe {
 }
 
 #form-section {
-
+    background-color: #20b2aa;
+    font-family: Helvetica;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
 }
 
 form {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
-
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
 }
 
 #email {
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5) inset;
 
 }
 
 #submit {
-
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
 }
 
 #purchase-section {
@@ -87,7 +112,7 @@ label {
     border-radius: 10px;
     background-color: lightgray;
     justify-content: center;
-    margin: auto;
+    margin: 50px;
 }
 
 .product-info {
