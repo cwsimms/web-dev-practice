@@ -1,14 +1,49 @@
-﻿#navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    position: absolute;
+﻿body {
+    min-width: 290px;
 }
 
-/*
+#navbar {
+    position: fixed;
+    height: 100%;
+    border-right: solid 3px;
+    min-width: 290px;
+    width: 300px;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar-header {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: auto;
+    border-bottom: solid 2px;
+}
+
+ul {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+li {
+    border-bottom: solid 1px;
+    padding: 10px 0px 10px 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 20px;
+    color: black;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 815px) {
     #navbar {
         justify-content: center;
     }
 }
-*/
