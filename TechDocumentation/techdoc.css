@@ -1,0 +1,14 @@
+﻿#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+}
+
+/*
+@media only screen and (max-width: 815px) {
+    #navbar {
+        justify-content: center;
+    }
+}
+*/
