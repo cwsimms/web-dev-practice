@@ -24,7 +24,7 @@ ul {
     margin-top: 0px;
 }
 
-li {
+.nav-li {
     border-bottom: solid 1px;
     padding: 10px 0px 10px 0px;
 }
@@ -40,6 +40,13 @@ li {
     position: absolute;
     margin-left: 310px;
     margin-bottom: 100px;
+}
+
+code {
+    display: block;
+    word-wrap: normal;
+    line-height: 2;
+    white-space: pre-line;
 }
 
 @media only screen and (max-width: 815px) {
