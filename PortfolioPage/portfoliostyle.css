@@ -1,0 +1,15 @@
+﻿body
+{
+}
+
+#welcome-section {
+    height: 100%;
+}
+
+#navbar {
+    position: absolute;
+}
+
+@media only screen and (max-width: 815px) {
+
+}
