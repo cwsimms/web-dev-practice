@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="productstyle.css" />
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="Botanagrowth.png" alt="Botanagrowth"/>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" name="main" href="#main"><b>home</b></a></li>
+                <li><a class="nav-link" name="video" href="#video-section"><b>video</b></a></li>
+                <li><a class="nav-link" name="form" href="#form-section"><b>form</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <section id="form-section">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email"><strong>e-mail</strong></label><br />
+                <input id="email" type="email" name="email" placeholder="johnsmith@email.com" />
+                <input id="submit" type="submit" value="submit" />
+            </form>
+        </section>
+
+        <section id="video-section">
+            <iframe id="video" width="640" height="480" src="https://www.youtube.com/embed/y6120QOlsfU&ab_channel=Darude" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section id="purchase-section">
+            <div class="product-container" id="ivy-container">
+                <div class="product-info" id="ivy-info">
+                    <h2 class="product-title">ivy</h2>
+                    <img class="product-img" id="ivy-img" src="ivy.jpg" alt="placeholder"/>
+                    <button class="product-button">$50</button>
+                </div>
+            </div>
+            <div class="product-container" id="snake-container">
+                <div class="product-info" id="snake-info">
+                    <h2 class="product-title">snake plant</h2>
+                    <img class="product-img" id="snake-img" src="snakeplant.jpg" alt="placeholder"/>
+                    <button class="product-button">$30</button>
+                </div>
+            </div>
+            <div class="product-container" id="peace-lily-container">
+                <div class="product-info" id="peace-lily-info">
+                    <h2 class="product-title">peace lily</h2>
+                    <img class="product-img" id="peace-lily-img" src="peacelily.jpg" alt="placeholder"/>
+                    <button class="product-button">$25</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

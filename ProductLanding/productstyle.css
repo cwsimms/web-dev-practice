@@ -1,0 +1,256 @@
+﻿body {
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightseagreen;
+    border-radius: 10px;
+}
+
+#header-img {
+
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 27px;
+}
+
+li {
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nav-link {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    color: #20b2aa;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.nav-link:hover {
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+.nav-link:active {
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5) inset;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video-section {
+
+}
+
+iframe {
+
+}
+
+#form-section {
+    background-color: #20b2aa;
+    font-family: Helvetica;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+#email {
+    border-radius: 15px;
+    border: none;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5) inset;
+}
+
+#email:focus {
+    border: none;
+    outline: none;
+}
+
+#submit {
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+}
+
+#submit:hover {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+}
+
+#submit:active {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5) inset;
+}
+
+#purchase-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #20b2aa;
+    justify-content: center;
+    margin: 50px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    min-width: 11ch;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.product-img {
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.product-button {
+    text-align: center;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #20b2aa;
+    font-family: Helvetica;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product-button:hover {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+}
+
+.product-button:active {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5) inset;
+}
+
+@media (max-width: 975px) {
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightseagreen;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    #purchase-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 685px) {
+    #video-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        height: auto;
+    }
+
+    iframe {
+        max-width: 90%;
+        height: 480px;
+    }
+}
+
+@media (max-width: 545px) {
+    #header-img {
+        height: auto;
+        width: 100%;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    li {
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #iframe {
+        height: 240px;
+    }
+}
