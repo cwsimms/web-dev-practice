@@ -4,21 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <title>Christopher Simms</title>
-    <link rel="stylesheet"href="portfoliostyle.css"/>
+    <!--<link rel="stylesheet"href="portfoliostyle.css"/>-->
 </head>
 
 <body>
     <nav id="navbar">
-        <a class="nav-link" href="#projects">Projects</a>
+        <h2 id="nav-title">Christopher Simms</h2>
+        <ul id="nav-list">
+            <li><a class="nav-link" href="#welcome-section">about</a></li>
+            <li><a class="nav-link" href="#projects">projects</a></li>
+            <li><a class="nav-link" href="#contact">contact</a></li>
+        </ul>
     </nav>
-    <main id="welcome-section">
-        <h1>Christopher Simms</h1>
-        <div id="projects">
-            <div class="project-tile">
-                <a class=""href="#">Project Title</a>
+    <main id="main-section">
+        <section id="welcome-section">
+            <div id="welcome-header">
+                <h1>Hi, I'm Christopher Simms.</h1>
+                <p>I make <span>websites, games,</span> and <span>other stuff.</span></p>
             </div>
+        </section>
+        <section id="projects">
+            <h3>Here are some projects I've worked on: </h3>
+            <div id="project-grid">
+                <div class="project-tile">
+                    <a class=""href="#">Project Title</a>
+                </div>
+            </section>
         </div>
-        <a id="profile-link" href="https://github.com/cwsimms/" target="_blank">Github</a>
+        <section id="contact">
+            <h3>Want to collaborate? Let's get a coffee sometime!</h3>
+            <a class="contact-link" id="email-link" href="mailto:cw_simms@sbcglobal.net" target="_blank">email</a>
+            <a class="contact-link" id="linkedin-link" href="https://www.linkedin.com/in/chris-simms-b288bab0">linkedin</a>
+            <a class="contact-link" id="twitter-link" href="twitter.com/cwsimms">twitter</a>
+            <a class="contact-link" id="profile-link" href="https://github.com/cwsimms/" target="_blank">github</a>
+        </section>
     </main>
 </body>
 </html>
