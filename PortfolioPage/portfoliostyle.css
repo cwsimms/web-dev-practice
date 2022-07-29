@@ -14,6 +14,101 @@ body {
 #navbar {
     box-sizing: border-box;
     position: absolute;
+    background: linear-gradient(180deg, #92DEFF 0%, rgba(0, 179, 255, 0.85) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 96%;
+    /*
+    height: 64px;
+    margin-left: 31px;
+    margin-right: 31px;
+    margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    */
+    height: 6.25vh;
+    max-height: 64px;
+    margin-left: 2.15%;
+    margin-right: 2.15%;
+    margin-top: 2.34vh;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-top: 0.48vh;
+    padding-bottom: 0.48vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+#nav-title {
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /*margin: 10px 12px 10px 0px;*/
+    margin: 0.97vh 0.83vw 0.97vh 0vw;
+    padding: 0px;
+    max-height: 51.8px;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.55) 100%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    min-width: 85px;
+    max-width: 103px;
+    /*
+    width: 114px;
+    height: 26px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 40px;
+    border-radius: 10px;
+    */
+    width: 7.92vw;
+    height: 2.53vh;
+    max-height: 26px;
+    padding-top: 0.78vh;
+    padding-bottom: 0.78vh;
+    margin-left: 2.77vw;
+    border-radius: 10px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    /*
+    line-height: 28px;
+    width: 114px;
+    */
+    line-height: 2.73vh;
+    width: 7.91vh;
+    text-align: center;
+    text-decoration: none;
+    color: #00B2FF;
+    /*padding: 0px 16px 0px 16px;*/
+    padding: 0vh 1.1vw 0vh 1.1vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #welcome-section {
@@ -21,6 +116,34 @@ body {
 }
 
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 850px) {
+    #navbar {
+        /*height: 128px;*/
+        max-height: 128px;
+        height: 12.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
 
+    #nav-list {
+        /*margin: 0px 0px 28px 0px;*/
+        margin: 0vh 0vw 2.73vh 0vw;
+    }
+
+    .nav-button {
+        /*
+        margin-left: 20px;
+        margin-right: 20px;
+        */
+        margin-left: 2.35vw;
+        margin-right: 2.35vw;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
 }
