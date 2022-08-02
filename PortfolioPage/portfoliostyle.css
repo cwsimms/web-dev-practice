@@ -6,7 +6,7 @@ body {
 
 body {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 137, 196, 0.83) 34.9%, #00B2FF 57.81%, rgba(71, 200, 255, 0.799398) 76.04%, rgba(150, 223, 255, 0.576087) 90.62%, rgba(150, 255, 186, 0.576087) 100%);
-    height: 100vh;
+    height: 300vh;
     width: 100vw;
     font-family: 'Roboto';
 }
@@ -19,16 +19,6 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 10px;
     width: 96%;
-    /*
-    height: 64px;
-    margin-left: 31px;
-    margin-right: 31px;
-    margin-top: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    */
     height: 6.25vh;
     max-height: 64px;
     margin-left: 2.15%;
@@ -72,14 +62,6 @@ body {
     backdrop-filter: blur(4px);
     min-width: 85px;
     max-width: 103px;
-    /*
-    width: 114px;
-    height: 26px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-left: 40px;
-    border-radius: 10px;
-    */
     width: 7.92vw;
     height: 2.53vh;
     max-height: 26px;
@@ -96,29 +78,99 @@ body {
     align-content: center;
     font-size: 24px;
     font-weight: 600;
-    /*
-    line-height: 28px;
-    width: 114px;
-    */
     line-height: 2.73vh;
     width: 7.91vh;
     text-align: center;
     text-decoration: none;
     color: #00B2FF;
-    /*padding: 0px 16px 0px 16px;*/
     padding: 0vh 1.1vw 0vh 1.1vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 #welcome-section {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    height: 33.4vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 39.94vh;
 }
 
+#profile-pic-wrapper {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0.52%, #00B3FF 31.77%, rgba(0, 179, 255, 0.51) 69.78%, rgba(255, 255, 255, 0.08) 97.4%);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(45px);
+    margin-right: 80px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#profile-pic {
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+}
+
+#welcome-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 762px;
+    left: calc(50% - 762px/2 + 224px);
+    top: 58px;
+    bottom: 56px;
+}
+
+#hello-text {
+    width: 762px;
+    height: 113px;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: auto;
+    font-family: 'Roboto';
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 84px;
+    color: #FBFBFB;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#subtitle-text {
+    width: 762px;
+    height: 128px;
+    margin-top: 0px;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    color: #FBFBFB;
+    
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+@media only screen and (max-width: 1270px) {
+    /*Center welcome-section and children here*/
+}
 
 @media only screen and (max-width: 850px) {
     #navbar {
-        /*height: 128px;*/
         max-height: 128px;
         height: 12.5vh;
         display: flex;
@@ -130,15 +182,10 @@ body {
     }
 
     #nav-list {
-        /*margin: 0px 0px 28px 0px;*/
         margin: 0vh 0vw 2.73vh 0vw;
     }
 
     .nav-button {
-        /*
-        margin-left: 20px;
-        margin-right: 20px;
-        */
         margin-left: 2.35vw;
         margin-right: 2.35vw;
     }
