@@ -1,4 +1,13 @@
-﻿html,
+﻿html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html,
 body {
     margin: 0;
     padding: 0;
@@ -167,6 +176,26 @@ body {
 
 @media only screen and (max-width: 1270px) {
     /*Center welcome-section and children here*/
+    #welcome-section {
+        flex-direction: column;
+    }
+
+    #profile-pic-wrapper {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #welcome-header {
+
+    }
+
+    #hello-text {
+        text-align: center;
+    }
+
+    #subtitle-text {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -191,6 +220,51 @@ body {
     }
 
     .nav-link {
+        font-size: 20px;
+    }
+
+    #welcome-section {
+
+    }
+
+    #profile-pic-wrapper {
+
+    }
+
+    #profile-pic {
+        width: 240px;
+        height: 240px;
+    }
+
+    #welcome-header {
+
+    }
+
+    #hello-text {
+        font-size: 64px;
+    }
+
+    #subtitle-text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+
+    #subtitle-text {
+        width: 93.5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #hello-text {
+        font-size: 40px;
+    }
+
+    #subtitle-text {
         font-size: 20px;
     }
 }
