@@ -1,7 +1,6 @@
 ﻿html {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    max-height: 4000px;
 }
 
 html::-webkit-scrollbar {
@@ -16,8 +15,7 @@ body {
 
 body {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 137, 196, 0.83) 34.9%, #00B2FF 57.81%, rgba(71, 200, 255, 0.799398) 76.04%, rgba(150, 223, 255, 0.576087) 90.62%, rgba(150, 255, 186, 0.576087) 100%);
-    height: 300vh;
-    max-height: 4000px;
+    height: max-content;
     width: 100vw;
     font-family: 'Roboto';
 }
@@ -25,7 +23,8 @@ body {
 /*START NAVBAR*/
 #navbar {
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
+    z-index: 100; /*navbar should always be on top*/
     background: linear-gradient(180deg, #92DEFF 0%, rgba(0, 179, 255, 0.85) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
@@ -84,6 +83,15 @@ body {
     border-radius: 10px;
 }
 
+.nav-button:hover {
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-button:active {
+    box-shadow: inset 0px 6px 5px  rgba(0, 0, 0, 0.8);
+    background: linear-gradient(180deg, rgba(127.5, 127.5, 127.5, 0.75) 0%, rgba(127.5, 127.5, 127.5, 0.55) 100%);
+}
+
 .nav-link {
     display: flex;
     justify-content: center;
@@ -100,12 +108,15 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.nav-link:active {
+    padding-top: 3px;
+}
 /*END NAVBAR*/
 
 main {
     display: flex;
     flex-direction: column;
-    max-height: 3072px;
 }
 
 /*START WELCOME SECTION*/
@@ -190,7 +201,7 @@ main {
 /*START PROJECTS SECTION*/
 #projects {
     width: 100%;
-    height: 778px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     margin-top: 396px;
@@ -225,6 +236,7 @@ main {
     grid-row-gap: 64px;
 }
 
+/*START PROJECT TILE*/
 .project-tile {
     width: 276.48px;
     height: 276.48px;
@@ -260,28 +272,44 @@ main {
     height: 100px; /*not actually 100px, just filling space*/
 }
 
+.project-title-wrapper:hover {
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-title-wrapper:active {
+    background: linear-gradient(180deg, rgba(167.3, 167.3, 167.3, 0.8) 0%, rgba(167.3, 167.3, 167.3, 0.5) 100%);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
 .project-title {
     text-decoration: none;
     font-style: normal;
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
     text-align: center;
-
+    width: 100%;
+    height: max-content;
     color: #0066FF;
 }
+
+
+
+/*END PROJECT TILE*/
 /*END PROJECTS SECTION*/
 
 /*START CONTACT SECTION*/
 #contact {
-    margin-top: 558px;
-    margin-bottom: 401px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: fit-content;
+    margin-top: 558px;
+    margin-bottom: 401px;
 }
 
 #contact-header {
@@ -305,7 +333,7 @@ main {
     align-items: center;
     align-content: center;
     background: linear-gradient(180deg, rgba(0, 179, 255, 0.5) 0%, rgba(0, 179, 255, 1) 100%);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     min-width: 85px;
     max-width: 201.6px;
@@ -317,6 +345,17 @@ main {
     border-radius: 10px;
 }
 
+.contact-link:hover {
+    margin-top: 2px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contact-link:active {
+    margin-top: 5px;
+    background: linear-gradient(180deg, rgba(0, 89.5, 127.5, 0.5) 0%, rgba(0, 89.5, 127.5, 1) 100%);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
 .contact-text {
     color: #FFFFFF;
     font-style: normal;
@@ -324,7 +363,9 @@ main {
     font-size: 40px;
     line-height: 47px;
     text-align: center;
-    margin: 16px 51px 16px 51px;
+    height: max-content;
+    width: 100%;
+    padding: 16px 51px 16px 51px;
     text-decoration: none;
 }
 
